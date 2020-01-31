@@ -1,0 +1,10 @@
+body {
+    background-image: url('../images/burger.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.burger-list {
+    min-height: 450px;
+}

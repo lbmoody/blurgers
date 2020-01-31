@@ -1,10 +1,14 @@
-<li>
-    {{burger_name}}
+<li class="list-group-item bg-secondary">
+    <div class="row">
+        <i class="fas fa-hamburger fa-2x ml-3"></i> <h4 class="ml-3">{{burger_name}}</h4>
+    </div>
 
-    <button class="change-devoured" data-id="{{id}}" data-devour="{{devoured}}">
-        {{#if devoured}}Eat this Burger!{{else}}I dont want it!{{/if}}
-    </button>
-    <button class="delete-burger" data-id="{{id}}">
-        Delete
-    </button>
+    <div class="d-flex justify-content-between">
+        <button class="btn {{#if devoured}}btn-success{{else}}btn-warning{{/if}} change-devoured" data-id="{{id}}" data-devour="{{devoured}}">
+            {{#if devoured}}Eat this Burger!{{else}}Regurgitate!{{/if}}
+        </button>
+        <button class="btn btn-danger delete-burger" data-id="{{id}}">
+            Delete
+        </button>
+    </div>
 </li>
