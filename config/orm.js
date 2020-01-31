@@ -62,7 +62,7 @@ const orm = {
         });
     }, 
 
-    delete: () => {
+    delete: (table, condition, cb) => {
         const queryString = `DELETE FROM ${table} WHERE ${condition};`;
 
         console.log(queryString);

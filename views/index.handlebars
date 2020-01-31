@@ -1,10 +1,10 @@
-<h1>Burger App!</h1>
+<h1 class="text-center text-dark">Eat-a-Burger</h1>
 
 <section >
-    <div class="d-flex justify-content-between">
-        <div class="my-3">
-            <div class="card bg-dark p-2 burger-list shadow">
-                <h2>These burgers have not been eaten!</h2>
+    <div class="d-md-flex justify-content-between burger-list">
+        <div class="mb-3">
+            <div class="card bg-dark m-2 p-3 h-100 shadow">
+                <h2>These burgers have not been eaten</h2>
                 <ul class="list-group">
                     {{#each burgers}}
                     {{#unless devoured}}
@@ -13,12 +13,12 @@
                     {{/each}}
                 </ul>
             </div>
-        </div class="my-3">
+        </div>
 
-        <div class="my-3">
-            <div class="card bg-dark p-2 burger-list shadow">
-                <h2>These burgers have been devoured!</h2>
-                <ul>
+        <div class="mb-3">
+            <div class="card bg-dark m-2 p-3 h-100 shadow">
+                <h2>These burgers have been devoured</h2>
+                <ul class="list-group">
                     {{#each burgers}}
                     {{#if devoured}}
                     {{> burger-block devoured=false}}
@@ -30,7 +30,7 @@
     </div>
 </section>
 <section>
-    <div class="card bg-dark mt-5 shadow">
+    <div class="card bg-dark mx-2 mt-4 shadow">
         <div class="card-body">
             <h2 class="card-title">Create a Burger</h2>
             <form class="create-form">
@@ -41,12 +41,12 @@
                 </div>
 
                 <div class="custom-control custom-radio">
-                    <label for="slee">Devoured?</label><br>
-                    <input type="radio" name="devoured" value="1" checked> devoured!<br>
-                    <input type="radio" name="devoured" value="0"> Not Devoured
+                    <label for="devoured">When do you want to eat your burger?</label><br>
+                    <input type="radio" name="devoured" value="1"> Eat it right away<br>
+                    <input type="radio" name="devoured" value="0" checked> I prefer to admire my food first
                 </div>
 
-                <button type="submit" class="btn btn-success">Build Burger</button>
+                <button type="submit" class="btn btn-success mt-3 mx-2">Build Burger</button>
             </form>
         </div>
     </div>
