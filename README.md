@@ -1,6 +1,6 @@
 # blurgers
 A simple crud mvc application built using mysql, node, express, and a handmade orm.
-To see the deployed application click here
+To see the deployed application click [here](https://warm-headland-73050.herokuapp.com/).
 
 ## installation
 This application utilizes 4 npm packages. Please run an `npm i` or `npm install` prior to running the application locally. Also in the db/ folder there is a schema and seed.sql files that need to be run in your local sql server to have the database interaction. Then type `node server.js` into your command prompt to start the application locally.
